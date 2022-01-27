@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+
 class hashtable
 {
     private:
@@ -54,9 +55,9 @@ class hashtable
         }
         int myfind()
         {
-            int c;
-        cout<"find?";
-        cin>>c;
+              int x,c = 0;
+        cout<<"find?";
+        cin>>x;
        
             int hashval=myhash(x);
             while(c<10)
@@ -64,8 +65,8 @@ class hashtable
                 if (v[hashval]==x)
                
             {
-                cout<"found"<<endl;
-                return 0;
+                cout<"found";
+                    return 0;
             }
             else
             {
@@ -75,13 +76,14 @@ class hashtable
             }
             c++;
             }
-        cout<<"Not found"
+        cout<<"Not found";
         }
            
            
 };
 int main()
 {
+	
     hashtable thehashtable;
    
     thehashtable.insert(2);
